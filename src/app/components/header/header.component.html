@@ -1,0 +1,98 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light index" >
+    <a class="navbar-brand" href="#">
+        <img class="logo" [routerLink]="['/home']" src="../../../assets/imgs/logo.svg" class="d-inline-block align-top" alt="">
+    </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> 
+    </button> 
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+          <div class="col-sm-12 hidden moveRight" (click)="close()">
+            <P class="alignRight">X</P>
+        </div>
+
+     <!--   <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/home']">Home </a>
+        </li> -->
+        
+        <div class="containerBotonesAdicional">
+          <li class="nav-item hidden">
+            <a class="nav-link" [routerLink]="['/history']">Historia/Misión</a>
+          </li>
+          <li class="nav-item hidden">
+              <a class="nav-link" [routerLink]="['/scholl']">Escuela</a>
+          </li>
+          <li class="nav-item hidden">
+              <a class="nav-link" [routerLink]="['/faq']">Preguntas Frecuentes</a>
+          </li>
+          <!-- <li class="nav-item hidden">
+              <a class="nav-link" (click)="openContact()">Contactanos</a>
+          </li> -->
+        </div>
+     
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fijos" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Idioma
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item oscuro" href="#">Español</a>
+            <a class="dropdown-item oscuro" href="#">Inglés</a>
+            <!-- <div class="dropdown-divider"></div> -->
+            <a class="dropdown-item oscuro" href="#">Holandes</a>
+          </div>
+        </li>
+        <li class="nav-item fijos">
+          <ion-item>
+            <a class="nav-link" [routerLink]="['/unete']">Unete</a>
+          </ion-item>
+        </li>
+        <li class="nav-item fijos">
+          <ion-item>
+            <a class="nav-link" (click)="openContact()">Contactanos</a>
+          </ion-item>
+        </li>
+        <li>
+          <div class="container col-sm-12 fondo">
+           
+              <div class="col-sm-2 col-md-2 icono">
+                <img src="../../../assets/icons/facebook-square-brands.svg" alt="">
+              </div>
+              <div class="col-sm-2 col-md-2 icono">
+                <img src="../../../assets/icons/instagram-brands.svg" alt="">
+              </div>
+              <div class="col-sm-2 col-md-2 icono">
+                <img src="../../../assets/icons/twitter-square-brands.svg" alt="">
+              </div>
+              <div class="col-sm-2 col-md-2 icono">
+                <img src="../../../assets/icons/envelope-regular.svg" alt="">
+              </div>
+            </div>
+            
+        </li>
+        
+        <li>
+          <div class="col-sm-12 col-md-4 align-self-end">
+            <button class="btn btn-danger donar" [routerLink]="['/pay']">Dona Aquí</button>
+        </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid" style="background:url(../../../../../assets/imgs/header/cabecera.png); background-size: cover; background-repeat: no-repeat;">
+      <div class="container imagenSize">
+          <div class="row">
+              <div class="col-sm-12 col-md-8">
+                  <h1 class="display-2 titulo">{{titulo}}</h1>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <p class="lead subtitulo">{{subtitulo}}</p>
+                </div>
+                <div class="col-sm-8"></div>
+                <!-- <div class="col-sm-12 col-md-4 align-self-end">
+                    <button class="btn btn-danger donar" [routerLink]="['/pay']">Ayudanos donando</button>
+                </div>  -->
+          </div>
+      </div>
+</div>

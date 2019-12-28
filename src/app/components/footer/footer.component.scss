@@ -1,0 +1,56 @@
+.icono{
+    color:#fff!important;
+    img{
+        width:40px!important;
+        display: inline-block;
+        text-align: center;
+    }
+}
+.container, .container-fluid{
+    background:#0F4471;
+}
+ul{
+    list-style-type: none;
+    margin-bottom:30px;
+        li{
+            color:#fff;
+            margin-bottom:10px;
+        }
+        @media (max-width:900px) {
+            margin-bottom:0;
+    }
+}
+img{
+    width:80px;
+    margin-bottom:10px;
+    margin-left:20px;
+}
+.bloqueIzquierdo{
+    margin-top:30px;
+        @media (max-width:900px) {
+            text-align: center;
+            img{
+                width:100px;
+            }
+    }
+}
+.bloqueDerecho{
+    margin-top: 30px;
+    @media (max-width:900px) {
+        text-align: center;
+
+    }
+}
+.donar{
+    margin-top:20px;
+    margin-right:100px;
+    margin-bottom:10px;
+}
+.center{
+    text-align: right;
+    @media (max-width:900px) {
+        text-align: center;
+        margin-left: 100px!important;
+
+}
+}

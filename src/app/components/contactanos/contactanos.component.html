@@ -1,0 +1,53 @@
+<!-- <h1 mat-dialog-title>Hi </h1> -->
+<div mat-dialog-content>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-7 col-lg-7 formulario">
+                <h3>CONTACTANOS</h3>
+                <P class="parrafoContact">Si tienes alguna pregunta que no hemos respondido, no dudes en contactarnos.Intetamos responder los mensajes dentro de las 48 horas.</P>   
+                <div class="container">
+                    <div class="row">
+                       
+                            <mat-form-field class="col-sm-12 col-md-12">
+                                <input matInput placeholder="Nombre">
+                            </mat-form-field>
+                   
+                       
+                            <mat-form-field class="col-sm-12 col-md-12">
+                                    <input matInput placeholder="Apellido" type="text">
+                                </mat-form-field>
+                        
+                        
+                            <mat-form-field class="col-sm-12 col-md-12">
+                                 <input matInput placeholder="email" type="email">
+                            </mat-form-field>
+                      
+
+                        
+                                <mat-form-field class="col-sm-12 col-md-12">
+                                        <mat-label>En que podemos ayudarte?</mat-label>
+                                        <select matNativeControl required>
+                                          <option value="volvo">Tengo una pregunta sobre la fundación</option>
+                                          <option value="saab">Me gustaría ser voluntario</option>
+                                          <option value="mercedes">Estoy interesado/a en la donación y/o patrocinio</option>
+                                          <option value="audi">Otro Especificar en el mensaje</option>
+                                        </select>
+                                      </mat-form-field>
+                            
+
+                            <mat-form-field class="col-sm-12 col-md-12">
+                                    <textarea matInput placeholder="Mensaje"></textarea>
+                                  </mat-form-field>
+                    </div>
+                </div>
+                <div mat-dialog-actions>
+                        <button mat-raised-button color="primary" block (click)="goToMessage()">Enviar</button>
+                </div>
+            </div>
+             <div class="col-sm-6 col-md-5 col-lg-5 containerImagen" >
+                     <!-- <img src="../../../assets/imgs/home/primera.png" alt=""> -->
+             </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,200 @@
+<app-header></app-header>
+<div class="container-fluid">
+
+        <div class="row">
+                <div class="w-50 col-sm-6 col-md-3 col-lg-3 contenedorIconos" [routerLink]="['/history']">
+                    <div class="row">
+                        <div class="w-100">
+                            <img  class="imagenIcono" src="../../../assets/imgs/home/quienes.png" alt="">
+                        </div>
+                        <div class="w-100 textoCenter">
+                            <p>Quienes Somos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-50 col-sm-6 col-md-3 col-lg-3 contenedorIconos" [routerLink]="['/scholl']">
+                    <div class="row">
+                        <div class="w-100">
+                            <img  class="imagenIcono" src="../../../assets/imgs/home/school.png" alt="">
+                        </div>
+                        <div class="w-100 textoCenter">
+                            <p>Escuela Con pazion</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="w-50 col-sm-6 col-md-3 col-lg-3 contenedorIconos" [routerLink]="['/faq']">
+                    <div class="row">
+                        <div class="w-100">
+                            <img  class="imagenIcono" src="../../../assets/imgs/home/testimonios.png" alt="">
+                        </div>
+                        <div class="w-100 textoCenter">
+                            <p>Testimonios</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="w-50 col-sm-6 col-md-3 col-lg-3 contenedorIconos" [routerLink]="['/pay']">
+                    <div class="row">
+                        <div class="w-100">
+                            <img class="imagenIcono" src="../../../assets/imgs/home/dona.png" alt="">
+                        </div>
+                        <div class="w-100 textoCenter">
+                            <p> Dona</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+  
+    <!-- <div class="row">
+        <div class="col-sm-12 col-lg-6 col-md-6 primeraImagen">
+            <img src="../../../assets/imgs/home/primera.png" alt="">
+        </div>
+        <div class="col-sm-12 col-lg-6 col-md-6">
+            <div class="row">
+                <div class="col-md">
+                    <img class="icono" src="../../../assets/imgs/home/iconEdu.png" alt="">
+                    <h5>Eduación</h5>
+                    <p class="parrafoHome">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eligendi ipsa
+                        tempora iure ut quae excepturi molestiae quasi? Harum eum quis rem aliquam eius, labore optio
+                        laborum eligendi est tempora.
+                    </p>
+                </div>
+                <div class="col-md">
+                    <img class="icono" src="../../../assets/imgs/home/iconMedi.png" alt="">
+                    <h5>Yoga y Meditación</h5>
+                    <p class="parrafoHome">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eligendi ipsa
+                        tempora iure ut quae excepturi molestiae quasi? Harum eum quis rem aliquam eius, labore optio
+                        laborum eligendi est tempora.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="row">
+                <div class="col-md">
+                    <img class="icono" src="../../../assets/imgs/home/iconSal.png" alt="">
+                    <h5>Salud</h5>
+                    <p class="parrafoHome">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eligendi ipsa
+                        tempora iure ut quae excepturi molestiae quasi? Harum eum quis rem aliquam eius, labore optio
+                        laborum eligendi est tempora.
+                    </p>
+                </div>
+                <div class="col-md">
+                    <img class="icono" src="../../../assets/imgs/home/iconVal.png" alt="">
+                    <h5>Habilidades y valores de la vida</h5>
+                    <p class="parrafoHome">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias eligendi ipsa
+                        tempora iure ut quae excepturi molestiae quasi? Harum eum quis rem aliquam eius, labore optio
+                        laborum eligendi est tempora.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 primeraImagen">
+            <img src="../../../assets/imgs/home/segunda.png" alt="">
+        </div>
+        <div class="col-sm"></div>
+    </div>
+    <!--   <div class="row col-md-12 align-items-center justify-content-center">
+    </div> -->
+    <div class="col-sm-12 col-md-12 col-lg12">
+        <p class="paragraphInHome">Estamos equipando a los niños en Perú con las herramientas y la fortaleza que necesitan para florecer y avanzar hacia su futuro con esperanza</p>
+    </div>
+    <div class="jumbotron jumbotron-fluid" style="background:url(../../../../../assets/imgs/header/impacto.png); background-size: cover; background-repeat: no-repeat;">
+        <div class="container imagenSize">
+            <div class="row">
+                <div class="col-sm-12 offset-md-2 ol-md-8 offset-lg-2 col-lg-8">
+                    <h1 class="display-2 titulo">Nuestro Impacto</h1>
+                  </div>
+                  <!-- <div class="col-sm-12 col-md-8 col-lg-8">
+                      <p class="lead subtitulo">Conoce más</p>
+                  </div> -->
+                  <div class="col-sm-8 offset-md-4 col-md-4 offset-lg-4 col-lg-4"></div>
+                  <div class="col-sm-12 offset-md-4 col-md-4 offset-lg-4 col-lg-4 botonConoceMas">
+                      <button class="btn btn-danger donar" [routerLink]="['/scholl']">Conoce más..</button>
+                  </div> 
+            </div>
+        </div>
+  </div>    
+        
+        <div class="col-sm-12 col-md-12 col-lg-12 containerTestimonio">
+            <h4 class="tituloTestimonio">Testimonios</h4>
+        </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <!-- <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol> -->
+                    <div class="carousel-inner center">
+                      <div class="carousel-item active col-sm-12 col-md-4 col-lg-4">
+                        <div class="card mb-3" style="width: 100%; text-align: center;">
+                            <div class="card-body">
+                                <h5 class="card-title">Blog</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button href="#" class="btn btn-danger donar" [routerLink]="['/blog']">Conoce más</button>
+                            </div>
+                            <img class="card-img-bottom" src="../../../assets/imgs/home/tstimonioOne.jpg" alt="Card image cap">
+                          </div>
+                          <!-- <div class="row">
+                              <div class="col-sm-4 col-md-4 col-lg-4 imagenTestimonio">
+                                  <img src="../../../assets/imgs/home/tstimonioOne.jpg" alt="">
+                              </div>
+                              <div class="col-sm-8 col-md-8 col-lg-8">
+                                  <p class="tituloTestimonios">Blog</p>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium incidunt praesentium voluptatem accusamus ex? Deserunt natus assumenda ullam dolores atque necessitatibus praesentium, quia aperiam odio libero? Ut sunt voluptatem libero.</p>
+                                  <button class="btn btn-danger donar" [routerLink]="['/blog']">Conoce más</button>
+                              </div>
+                          </div> -->
+                      </div>
+                      <div class="carousel-item col-sm-12 col-md-4 col-lg-4">
+                        <div class="card" style="width: 100%; text-align: center;">
+                            <div class="card-body">
+                                <h5 class="card-title">preguntas Frecuentes</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button href="#" class="btn btn-danger donar" [routerLink]="['/faq']">Conoce más</button>
+                            </div>
+                            <img class="card-img-bottom" src="../../../assets/imgs/home/testimonioTwo.png" alt="Card image cap">
+                          </div>
+                          <!-- <div class="row">
+                              <div class="col-sm-4 col-md-4 col-lg-4 imagenTestimonio">
+                                  <img src="../../../assets/imgs/home/testimonioTwo.png" alt="">
+                              </div>
+                              <div class="col-sm-8 col-md-8 col-lg-8">
+                                  <p class="tituloTestimonios">preguntas Frecuentes</p>
+                                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores veniam amet commodi autem? Ipsa laboriosam iusto voluptate nostrum blanditiis ad veritatis? Nihil, eveniet? Sit culpa numquam non veniam debitis voluptatem!</p>   
+                                  <button class="btn btn-danger donar" [routerLink]="['/faq']">Conoce más</button>
+                              </div>
+                          </div> -->
+                        
+                      </div>
+                      <div class="carousel-item col-sm-12 col-md-4 col-lg-4">
+                        <div class="card" style="width: 100%; text-align: center;">
+                            <div class="card-body">
+                                <h5 class="card-title">Medía</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <button href="#" class="btn btn-danger donar" [routerLink]="['/media']">Conoce más</button>
+                            </div>
+                            <img class="card-img-bottom" src="../../../assets/imgs/home/testimonioThree.png" alt="Card image cap">
+                          </div>
+                          <!-- <div class="row">
+                              <div class="col-sm-12 col-md-12 col-lg-12 imagenTestimonio">
+                                  <img src="../../../assets/imgs/home/testimonioThree.png" alt="">
+                              </div>
+                              <div class="col-sm-12 col-md-8 col-lg-8">
+                                <p class="tituloTestimonios">Medía</p>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque quos, voluptas ad dolore provident possimus enim voluptatum? Ea possimus a, sapiente architecto vitae doloremque iure soluta beatae officiis amet labore?</p>
+                                <button class="btn btn-danger donar" [routerLink]="['/media']">Conoce más</button>
+                              </div>
+                          </div> -->
+                      </div>
+                    </div>
+                    <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a> -->
+                  </div>
+ 
+</div>

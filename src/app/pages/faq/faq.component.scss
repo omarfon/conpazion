@@ -1,0 +1,29 @@
+.tituloFaq{
+    color:#E60D00;
+    font-size:1.1em;
+    margin-top:20px;
+    text-transform: uppercase;
+}
+.containerFaq{
+    border: 1px solid #70B5B2;
+    margin:10px;
+    background:#fff;
+}
+.parrafoFaq{
+    color:#6D7278;
+    font-size:.9em;
+    font-weight: 200;
+}
+img{
+        width:100%;
+        height: 150px;
+    @media (max-width:600px) {
+        width:100%;
+        height: auto;
+        min-height: auto    ;
+    }
+/*     margin-bottom:10px; */
+}
+/* .container-fluid{
+    background:#f8f8f8!important;
+} */

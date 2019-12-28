@@ -1,0 +1,108 @@
+.cuadroImagen{
+    background:#666C73;
+    height: 250px;
+    margin-bottom:10px;
+}
+.mat-tab-labels {
+    display: flex;
+    justify-content: center;
+}
+.conteinarTabs{
+    text-align: center;
+}.contenedorTabs{
+    text-align: center;
+    max-width: 100%;
+}
+h3{
+    color:#70B5B2;
+    margin-top:10px;
+    font-size:1.3em;
+    font-weight: 200;
+}
+.parrafoHistory{
+    color:#666C73;
+    width:90%;
+    margin-left:5%;
+    font-size:.9em;
+    font-weight: 200;
+}
+.titulo {
+    background-color:#EC3953;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.titulo p{
+    color:#fff;
+    width:70%;
+    margin-left:15%;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.contenedorImagen img{
+    width:90%;
+    margin-left:5%;
+    height: 90%;
+    margin-top:20px;
+}
+.containerImagen{
+    img{
+        width:80%;
+        margin-left:10%;
+    }
+}
+.textoContenido{
+    color:#666C73;
+    width:90%;
+    margin-left:5%;
+    font-size:.9em;
+    font-weight: 200;
+}
+.containerPartnerts{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.sociosAliadosTitle{
+    margin-top:50px;
+    margin-bottom:20px;
+    color:#0F4471;
+    font-size:1.2em;
+}
+.imagenPartnerts img{
+    width:100px;
+}
+.down50{
+    margin-top:50px;
+}
+.fondoBlanco{
+    background: rgba(255, 255, 255, 0.8);
+    color:#0F4471;
+    font-weight: 400;
+    font-size:.9em;
+    width:80%;
+    margin-left:10%;
+    @media (max-width:900px) {
+        font-size:1em;
+    }
+}
+.voluntarioTitulo{
+    background: rgba(255, 255, 255, 0.8);
+    color:#0F4471;
+    font-weight: 400;
+    font-size:2em;
+    width:80%;
+    margin-left:10%;
+    @media (max-width:900px) {
+        font-size:1.6em;
+    }
+}
+.botonVoluntario{
+    background: #0F4471;
+    color:#fff;
+    border:none;
+}
+.voluntariadoContainer{
+    text-align: center;
+    margin-top:50px;
+    margin-bottom:30px;
+   
+}

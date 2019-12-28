@@ -1,0 +1,40 @@
+.imagenPago{
+    background-image: url(../../../assets/imgs/faq/uno.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    @media (max-width:900px) {
+        display: none;
+    }
+}
+h3{
+    color:#6EB3B1;
+    text-align: center;
+}
+.parrafoCambio{
+    color:#666C73;
+    width: 90%;
+    margin-left: 5%;
+    font-size:.9em;
+    margin-bottom:10px;
+}
+.contenedorPay{
+    width:70%;
+    margin-left:15%;
+    margin-top:20px;
+}
+.paises{
+    color:#6EB3B1;
+   
+    font-size:1.2em;
+    font-weight: 400;
+    @media (max-width:900px) {
+        text-align: center;
+    }
+}
+.cajaPago{
+    margin-bottom:30px;
+}
+.parrafoGrey{
+    color:#666C73;
+    font-size:.9em;
+}

@@ -1,0 +1,50 @@
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-lg-9 bloqueIzquierdo">
+        <img [routerLink]="['/home']" src="../../../assets/imgs/logo.svg" alt="">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <ul>
+              <li [routerLink]="['/history']">Historia/Misiòn</li>
+              <li [routerLink]="['scholl']">Escuela</li>
+              <li [routerLink]="['voluntariado']">Registro de Voluntariado</li>
+              <li [routerLink]="['contactanos']">Contactanos</li>
+            </ul>  
+          </div>
+          <div class="col-12 col-md-3">
+            <ul>
+              <li>Media</li>
+              <li [routerLink]="['faq']">Preguntas frecuentes</li>
+            </ul>
+          </div>
+          <!-- <div class="col-12 col-md-3">
+            <ul>
+              <li>Registro Voluntariado</li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-3 bloqueDerecho">
+        <div class="row">
+          <div class="w-25 col-sm-3 col-md-2 icono">
+            <a href="https://www.facebook.com/ConPazion/">
+              <img src="../../../assets/icons/facebook-square-brands.svg" alt="">
+            </a> 
+          </div>
+          <div class="w-25 col-sm-3 col-md-2 icono">
+            <img src="../../../assets/icons/instagram-brands.svg" alt="">
+          </div>
+          <div class="w-25 col-sm-3 col-md-2 icono">
+            <img src="../../../assets/icons/twitter-square-brands.svg" alt="">
+          </div>
+          <div class="w-25 col-sm-3 col-md-2 icono">
+            <img src="../../../assets/icons/envelope-regular.svg" alt="">
+          </div>
+        </div> 
+      </div>
+                                      <div class="col-sm-12 col-md-12  align-self-end center">
+                                         <button class="btn btn-danger donar" [routerLink]="['/pay']">Ayudanos donando</button>
+                                     </div>
+    </div>
+  </div>
+
