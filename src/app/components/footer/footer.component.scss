@@ -1,13 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+.distribuir{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .icono{
     color:#fff!important;
     img{
-        width:40px!important;
-        display: inline-block;
-        text-align: center;
+        width:35px!important;
+        /* display: flex;
+        justify-content: center; */
     }
 }
 .container, .container-fluid{
     background:#0F4471;
+    min-width:100%;
+    margin:0!important;
+    padding:0!important;
 }
 ul{
     list-style-type: none;
@@ -23,11 +35,12 @@ ul{
 img{
     width:80px;
     margin-bottom:10px;
-    margin-left:20px;
+    /* margin-left:50px; */
 }
 .bloqueIzquierdo{
     margin-top:30px;
-        @media (max-width:900px) {
+    margin-left:50px;
+        @media (max-width:700px) {
             text-align: center;
             img{
                 width:100px;
@@ -35,22 +48,31 @@ img{
     }
 }
 .bloqueDerecho{
+    text-align: center;
     margin-top: 30px;
-    @media (max-width:900px) {
-        text-align: center;
+    @media (max-width:700px) {
+        /* text-align: center; */
 
     }
 }
 .donar{
     margin-top:20px;
-    margin-right:100px;
+    margin-right:60px;
+    float:right;
     margin-bottom:10px;
+    padding: .5em 1em;
+    width:200px;
+    margin-left: calc( 50% - 100px );
+    @media (max-width:900px) {
+        text-align: center!important;
+        float:none;
+    }
 }
 .center{
-    text-align: right;
+    /* text-align: right; */
+    margin-bottom:30px;
     @media (max-width:900px) {
         text-align: center;
-        margin-left: 100px!important;
-
-}
+       /*  margin-left: 10px!important; */
+    }
 }

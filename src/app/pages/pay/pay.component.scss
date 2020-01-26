@@ -38,3 +38,19 @@ h3{
     color:#666C73;
     font-size:.9em;
 }
+.subtituloCabecera{
+    background:rgba(190, 5, 67, 0.7);
+    color:#fff;
+    font-size:6em;
+    position: absolute;
+    z-index:1000;
+    top:150!important;
+    margin-top:350px;
+    padding-left:20px;
+    padding-right:20px;
+    left:0;
+    @media (max-width:600px){
+        font-size:3.5em;
+        margin-top:180px;
+    }
+}

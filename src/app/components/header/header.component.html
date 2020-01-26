@@ -1,29 +1,40 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light index" >
     <a class="navbar-brand" href="#">
-        <img class="logo" [routerLink]="['/home']" src="../../../assets/imgs/logo.svg" class="d-inline-block align-top" alt="">
+        <img class="logo" routerLink="/home" src="../../../assets/imgs/logo.svg" class="d-inline-block align-top" alt="">
     </a>
+    <li class="nav-item dropdown sinStilos noOculto">
+      <a class="nav-link dropdown-toggle fijos" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{"MENU.IDIOMA" | translate}}
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('es')">{{"MENU.ES" | translate}}</a>
+        <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('en')">{{"MENU.EN" | translate}}</a>
+       
+        <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('nl')">{{"MENU.DA" | translate}}</a>
+      </div>
+    </li>
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span> 
     </button> 
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-          <div class="col-sm-12 hidden moveRight" (click)="close()">
-            <P class="alignRight">X</P>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- <div class="col-sm-12 hidden moveRight js-scroll-trigger" >
+          <P class="alignRight">X</P>
+    </div> -->
 
-     <!--   <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/home']">Home </a>
-        </li> -->
         
         <div class="containerBotonesAdicional">
           <li class="nav-item hidden">
-            <a class="nav-link" [routerLink]="['/history']">Historia/Misión</a>
+             <a class="nav-link" routerLink='/home'>{{'MENU.HOME' | translate}} </a>
+           </li>
+          <li class="nav-item hidden">
+            <a class="nav-link" routerLink="/history">{{'MENU.HISTORIA' | translate}}</a>
           </li>
           <li class="nav-item hidden">
-              <a class="nav-link" [routerLink]="['/scholl']">Escuela</a>
+              <a class="nav-link" routerLink="/scholl">{{'MENU.ESCUELA' | translate}}</a>
           </li>
           <li class="nav-item hidden">
-              <a class="nav-link" [routerLink]="['/faq']">Preguntas Frecuentes</a>
+              <a class="nav-link" routerLink="/faq">{{'MENU.FAQ' | translate}}</a>
           </li>
           <!-- <li class="nav-item hidden">
               <a class="nav-link" (click)="openContact()">Contactanos</a>
@@ -31,26 +42,32 @@
         </div>
      
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown sinStilos oculto">
           <a class="nav-link dropdown-toggle fijos" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Idioma
+            {{"MENU.IDIOMA" | translate}}
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item oscuro" href="#">Español</a>
-            <a class="dropdown-item oscuro" href="#">Inglés</a>
+            <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('es')">{{"MENU.ES" | translate}}</a>
+            <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('en')">{{"MENU.EN" | translate}}</a>
             <!-- <div class="dropdown-divider"></div> -->
-            <a class="dropdown-item oscuro" href="#">Holandes</a>
+            <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('nl')">{{"MENU.DA" | translate}}</a>
           </div>
         </li>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle fijos" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{"MENU.IDIOMA" | translate}}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('es')">{{"MENU.ES" | translate}}</a>
+            <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('en')">{{"MENU.EN" | translate}}</a>
+            <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('ne')">{{"MENU.DA" | translate}}</a>
+          </div>
+        </li> -->
         <li class="nav-item fijos">
-          <ion-item>
-            <a class="nav-link" [routerLink]="['/unete']">Unete</a>
-          </ion-item>
+            <a class="nav-link" routerLink="/unete">{{"MENU.UNETE" | translate}}</a>
         </li>
         <li class="nav-item fijos">
-          <ion-item>
-            <a class="nav-link" (click)="openContact()">Contactanos</a>
-          </ion-item>
+            <a class="nav-link" routerLink="/contact">{{"MENU.CONTACTANOS" | translate}}</a>
         </li>
         <li>
           <div class="container col-sm-12 fondo">
@@ -81,7 +98,7 @@
         
         <li>
           <div class="col-sm-12 col-md-4 align-self-end">
-            <button class="btn btn-danger donar" [routerLink]="['/pay']">Dona Aquí</button>
+            <button class="btn btn-danger donar" routerLink="/pay">{{"MENU.DONA" | translate}}</button>
         </div>
         </li>
       </ul>
@@ -90,17 +107,6 @@
 
   <div class="jumbotron jumbotron-fluid" style="background:url(../../../../../assets/imgs/header/cabecera.png); background-size: cover; background-repeat: no-repeat;">
       <div class="container imagenSize">
-          <div class="row">
-              <div class="col-sm-12 col-md-8">
-                  <h1 class="display-2 titulo">{{titulo}}</h1>
-                </div>
-                <div class="col-sm-12 col-md-8">
-                    <p class="lead subtitulo">{{subtitulo}}</p>
-                </div>
-                <div class="col-sm-8"></div>
-                <!-- <div class="col-sm-12 col-md-4 align-self-end">
-                    <button class="btn btn-danger donar" [routerLink]="['/pay']">Ayudanos donando</button>
-                </div>  -->
-          </div>
+          
       </div>
 </div>

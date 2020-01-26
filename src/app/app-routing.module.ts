@@ -7,6 +7,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { PayComponent } from './pages/pay/pay.component';
 import { UneteComponent } from './pages/unete/unete.component';
 import { VoluntariadoComponent } from './pages/voluntariado/voluntariado.component';
+import { ContactanosComponent } from './components/contactanos/contactanos.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'pay', component:PayComponent},
   {path:'unete', component:UneteComponent},
   {path:'voluntariado', component:VoluntariadoComponent},
+  {path:'contact', component:ContactanosComponent}
 ];
 
 @NgModule({

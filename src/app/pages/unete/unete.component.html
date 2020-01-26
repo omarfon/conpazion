@@ -1,12 +1,80 @@
-<app-header [titulo]="titulo" [subtitulo]="subtitulo"></app-header>
-<!-- <h1 mat-dialog-title>Hi </h1> -->
-<div mat-dialog-content>
+<div class="subtitulo">{{"SUBTITULO.UNETE" | translate}}</div>
+<app-header></app-header>
+
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 col-md-7 col-lg-7 formulario">
+            <div class="col-sm-12 col-md-6 col-lg-6 formulario">
                 <h3>Registro de voluntarios</h3>
                 <P class="parrafoContact">Si quieres ser parte del voluntariado de Con Pazion llena este formulario y nos pondremos en contacto contigo.</P>   
-                <div class="container">
-                    Aqui debe ir el formulario embebido para el registro de los voluntarios
-                </div>
-</div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <form class="col-sm-12 col-md-12 col-lg-12"  #form="ngForm">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-1g-12">
+                            <h4 >{{"VOLUNTARIO.DATOSNOMBRE" | translate}}</h4>
+                        </div>
+                        <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                          <label for="exampleInputEmail1">{{"VOLUNTARIO.NOMBRE" | translate}}</label>
+                          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="nombres" name="nombre">
+                          <!-- <small id="emailHelp" class="form-text text-muted">Ingresa tu nombre</small> -->
+                        </div>
+                        <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                            <label for="exampleInputEmail1">{{"VOLUNTARIO.APELLIDO" | translate}}</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="Apellidos" name="apellidos">
+                            <!-- <small id="emailHelp" class="form-text text-muted">Por favor ingresa tu apellido</small> -->
+                          </div>
+                          <div class="col-sm-12 col-md-12 col-lg-12">
+                              <h4>{{"VOLUNTARIO.DATOSDIRECCION" | translate}}</h4>
+                          </div>
+                          <div class="form-group col-sm-12 col-md-12 col-lg-12">
+                            <label for="emailVoluntario">{{"VOLUNTARIO.DIRECCION" | translate}}</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="dirección" name="direccion">
+                            <!-- <small id="emailHelp" class="form-text text-muted">Por favor ingresa tu apellido</small> -->
+                          </div>
+                          <div class="col-sm-6">
+                            <label for="ciudadVoluntario">{{"VOLUNTARIO.CIUDAD" | translate}}</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="ciudad" name="ciudad">
+                          </div>
+                          <div class="col-sm-6">
+                            <label for="ciudadVoluntario">{{"VOLUNTARIO.ESTADO" | translate}}</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="estado" name="estado">
+                          </div>
+
+                          <div class="col-sm-6">
+                            <label for="ciudadVoluntario">{{"VOLUNTARIO.CODIGOPOST" | translate}}</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="codigopost" name="codigopost">
+                          </div>
+                          <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                              <label for="exampleFormControlSelect1">{{"VOLUNTARIO.PAIS" | translate}}</label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>{{"VOLUNTARIO.PAIS1" | translate}}</option>
+                                  <option>{{"VOLUNTARIO.PAIS2" | translate}}</option>
+                                  <option>{{"VOLUNTARIO.PAIS3" | translate}}</option>
+                                 <!--  <option>{{"VOLUNTARIO.PAIS4" | translate}}</option>
+                                  <option>{{"VOLUNTARIO.PAIS5" | translate}}</option> -->
+                                </select>
+                            </div>
+                            
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <h4>{{"VOLUNTARIO.DATOSEMAIL" | translate}}</h4>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <label for="ciudadVoluntario">{{"VOLUNTARIO.EMAIL" | translate}}</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email" name="email">
+                              </div>
+                              <div class="col-sm-12 col-md-12 col-lg-12">
+                                <label for="ciudadVoluntario">{{"VOLUNTARIO.TELEFONO" | translate}}</label>
+                                <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="telefono" name="telefono">
+                              </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 botonAceptarVoluntario">
+                            <button type="submit" class="btn btn-primary">{{"VOLUNTARIO.ENVIAR" | translate}}</button>
+                        </div>
+                    </form>    
+            
+            </div>
+        </div>
+    </div>
+
+
+    

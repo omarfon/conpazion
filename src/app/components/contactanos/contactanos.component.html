@@ -1,47 +1,46 @@
-<!-- <h1 mat-dialog-title>Hi </h1> -->
+<div class="subtituloCabecera"><div class="subtitulo">{{"SUBTITULO.CONTACTANOS" | translate}}</div></div>
+<app-header></app-header>
 <div mat-dialog-content>
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-7 col-lg-7 formulario">
-                <h3>CONTACTANOS</h3>
-                <P class="parrafoContact">Si tienes alguna pregunta que no hemos respondido, no dudes en contactarnos.Intetamos responder los mensajes dentro de las 48 horas.</P>   
+                <h3>{{"CONTACTANOS.CONTACT" | translate}}</h3>
+                <P class="parrafoContact">{{"CONTACTANOS.PARRAFO" | translate}}</P>   
                 <div class="container">
                     <div class="row">
-                       
-                            <mat-form-field class="col-sm-12 col-md-12">
-                                <input matInput placeholder="Nombre">
-                            </mat-form-field>
-                   
-                       
-                            <mat-form-field class="col-sm-12 col-md-12">
-                                    <input matInput placeholder="Apellido" type="text">
-                                </mat-form-field>
-                        
-                        
-                            <mat-form-field class="col-sm-12 col-md-12">
-                                 <input matInput placeholder="email" type="email">
-                            </mat-form-field>
-                      
-
-                        
-                                <mat-form-field class="col-sm-12 col-md-12">
-                                        <mat-label>En que podemos ayudarte?</mat-label>
-                                        <select matNativeControl required>
-                                          <option value="volvo">Tengo una pregunta sobre la fundación</option>
-                                          <option value="saab">Me gustaría ser voluntario</option>
-                                          <option value="mercedes">Estoy interesado/a en la donación y/o patrocinio</option>
-                                          <option value="audi">Otro Especificar en el mensaje</option>
+                                  <form class="col-sm-12 col-md-12 col-lg-12" (ngSubmit)="contactForm(form)" #form="ngForm">
+                                    <div class="form-group ">
+                                      <label for="exampleInputEmail1">{{"CONTACTANOS.NOMBRE" | translate}}</label>
+                                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="nombres" name="nombre">
+                                      <!-- <small id="emailHelp" class="form-text text-muted">Ingresa tu nombre</small> -->
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">{{"CONTACTANOS.APELLIDO" | translate}}</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="Apellidos" name="apellidos">
+                                        <!-- <small id="emailHelp" class="form-text text-muted">Por favor ingresa tu apellido</small> -->
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="exampleInputEmail1">{{"CONTACTANOS.EMAIL" | translate}}</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email" name="email">
+                                        <!-- <small id="emailHelp" class="form-text text-muted">Por favor ingresa tu apellido</small> -->
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="exampleFormControlSelect1">{{"CONTACTANOS.PREGUNTAS" | translate}}</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                          <option>{{"CONTACTANOS.PREGUNTAUNO" | translate}}</option>
+                                          <option>{{"CONTACTANOS.PREGUNTADOS" | translate}}</option>
+                                          <option>{{"CONTACTANOS.PREGUNTATRES" | translate}}</option>
+                                          <option>{{"CONTACTANOS.PREGUNTACUATRO" | translate}}</option>
+                                          <option>5</option>
                                         </select>
-                                      </mat-form-field>
-                            
-
-                            <mat-form-field class="col-sm-12 col-md-12">
-                                    <textarea matInput placeholder="Mensaje"></textarea>
-                                  </mat-form-field>
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">{{"CONTACTANOS.MENSAJE" | translate}}</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="mensaje"></textarea>
+                                      </div>
+                                    <button type="submit" class="btn btn-primary">{{"CONTACTANOS.ENVIAR" | translate}}</button>
+                                  </form>
                     </div>
-                </div>
-                <div mat-dialog-actions>
-                        <button mat-raised-button color="primary" block (click)="goToMessage()">Enviar</button>
                 </div>
             </div>
              <div class="col-sm-6 col-md-5 col-lg-5 containerImagen" >

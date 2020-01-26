@@ -20,6 +20,23 @@ import { PayComponent } from './pages/pay/pay.component';
 import { UneteComponent } from './pages/unete/unete.component';
 import { VoluntariadoComponent } from './pages/voluntariado/voluntariado.component';
 
+//Translation
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslationComponent } from './translation/translation.component';
+
+import {NgbModule, NgbCollapseModule} from '@ng-bootstrap/ng-bootstrap';
+
+//Servicios
+import { MessageService } from './services/message.service';
+import { FormsModule } from '@angular/forms';
+
+
+export function HttpLoaderFactory(http:HttpClient){
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,16 +51,28 @@ import { VoluntariadoComponent } from './pages/voluntariado/voluntariado.compone
     PaymentComponent,
     PayComponent,
     UneteComponent,
-    VoluntariadoComponent
+    VoluntariadoComponent,
+    TranslationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule,
+    NgbModule,
+    FormsModule,
+    NgbCollapseModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [ HttpClient ]
+      }
+    })
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   entryComponents: [ContactanosComponent]
