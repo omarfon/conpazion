@@ -6,7 +6,7 @@
       <a class="nav-link dropdown-toggle fijos" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         {{"MENU.IDIOMA" | translate}}
       </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
         <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('es')">{{"MENU.ES" | translate}}</a>
         <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('en')">{{"MENU.EN" | translate}}</a>
        
@@ -27,12 +27,9 @@
           <li class="nav-item hidden">
              <a class="nav-link" routerLink='/home'>{{'MENU.HOME' | translate}} </a>
            </li>
-          <li class="nav-item hidden">
-            <a class="nav-link" routerLink="/history">{{'MENU.HISTORIA' | translate}}</a>
-          </li>
-          <li class="nav-item hidden">
+       <!--    <li class="nav-item hidden">
               <a class="nav-link" routerLink="/scholl">{{'MENU.ESCUELA' | translate}}</a>
-          </li>
+          </li> -->
           <li class="nav-item hidden">
               <a class="nav-link" routerLink="/faq">{{'MENU.FAQ' | translate}}</a>
           </li>
@@ -41,8 +38,14 @@
           </li> -->
         </div>
      
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown sinStilos oculto">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a class="nav-link" routerLink="/history">{{'MENU.HISTORIA' | translate}}</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" routerLink="/scholl">{{"MENU.ESCUELA" | translate}}</a>
+        </li>
+        <li class="nav-item dropdown sinStilos oculto ">
           <a class="nav-link dropdown-toggle fijos" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{"MENU.IDIOMA" | translate}}
           </a>
@@ -53,7 +56,7 @@
             <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('nl')">{{"MENU.DA" | translate}}</a>
           </div>
         </li>
-        <!-- <li class="nav-item dropdown">
+        <li class="nav-item hidden ropdown">
           <a class="nav-link dropdown-toggle fijos" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             {{"MENU.IDIOMA" | translate}}
           </a>
@@ -62,14 +65,14 @@
             <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('en')">{{"MENU.EN" | translate}}</a>
             <a class="dropdown-item oscuro" href="#" (click)="cambiarLenguaje('ne')">{{"MENU.DA" | translate}}</a>
           </div>
-        </li> -->
-        <li class="nav-item fijos">
+        </li> 
+        <li class="nav-item hidden">
             <a class="nav-link" routerLink="/unete">{{"MENU.UNETE" | translate}}</a>
         </li>
-        <li class="nav-item fijos">
+        <li class="nav-item hidden">
             <a class="nav-link" routerLink="/contact">{{"MENU.CONTACTANOS" | translate}}</a>
         </li>
-        <li>
+        <li class="hidden">
           <div class="container col-sm-12 fondo">
            
               <div class="col-sm-2 col-md-2 icono">
@@ -105,7 +108,7 @@
     </div>
   </nav>
 
-  <div class="jumbotron jumbotron-fluid" style="background:url(../../../../../assets/imgs/header/cabecera.png); background-size: cover; background-repeat: no-repeat;">
+  <div class="jumbotron jumbotron-fluid" style="background:url(../../../../../assets/imgs/header/impacto.png); background-size: cover; background-repeat: no-repeat;">
       <div class="container imagenSize">
           
       </div>

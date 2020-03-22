@@ -3,7 +3,7 @@
     align-items: flex-end;
 }
 .imagenSize{
-    height: 650px;
+    height: 550px;
     @media (max-width:700px) {
         height:320px;
     }
@@ -52,17 +52,17 @@
 }
 .navbar{
     position: fixed!important;
-    background-color:rgba(255,255,255,0.7)!important;
+    background-color:rgba(255,255,255,0.8)!important;
     position: absolute;
     top:0;
     width:100%;
     z-index:2000!important;
         img{
-            width:70px;
+            width:80px;
         }
 }
 .logo img{
-    width:50px;
+    width:70px;
 }
 .nav-link{
     font-size:1em;
@@ -100,6 +100,9 @@
 }
 .navbar-toggler{
     color:#fff!important;
+}
+nav{
+    height: 80px!important;
 }
 ul{
     margin-right:100px;
