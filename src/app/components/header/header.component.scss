@@ -129,13 +129,13 @@ ul{
     display:none;
     @media (max-width:900px) {
         display:block;
-        font-size:1.6em;
+        font-size:1.3em;
         list-style-type: none;
         text-align: left;
         margin-left:80px;
         a{
             font-weight: 600;
-            color:#057b96;
+            color:#057b96!important;
             margin:0;
             padding:0;
 
@@ -153,7 +153,9 @@ li{
         @media (max-width:900px) {
             display:block;
             font-size:1.3em;
+            font-weight: 600;
             list-style-type: none;
+            color:#057b96!important;
             text-align: left;
             margin-left:80px;
         }
